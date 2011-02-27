@@ -1,0 +1,23 @@
+[user]
+	name = Stuart Ingram
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+
+[color "diff"]
+	new = cyan
+	old = magenta
+	frag = yellow
+	meta = green
+	commit = normal
