@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source ~/.bashrc
 if [[ -z `which rvm` ]]; then
   bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
   cp ~/.bashrc ~/.bashrc_pre_rvm
@@ -11,6 +11,7 @@ if [[ -z `which rvm` ]]; then
 
 fi
 EOF
+  source ~/.bashrc
   rvm install ree-1.8.7-2010.02
   rvm --default ree-1.8.7-2010.02
   rvm notes
