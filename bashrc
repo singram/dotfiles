@@ -120,4 +120,6 @@ test -f ~/.bash_functions && . ~/.bash_functions || true
 # want rspec/ruby to work fully in emacs
 if [[ -s /home/singram/.rvm/scripts/rvm ]] ; then source /home/singram/.rvm/scripts/rvm ; fi
 
+[[ $- == *i* ]]   &&   . ~/bash/git-prompt.sh
+
 #[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
