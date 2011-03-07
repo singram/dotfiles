@@ -1,2 +1,11 @@
 "\e[5~": history-search-backward
 "\e[6~": history-search-forward
+
+
+# Cycling through potential completions
+# List the possible completions when Tab is pressed:
+# Make Meta+S cycle through the list:
+
+set show-all-if-ambiguous on
+"\M-s": menu-complete
+

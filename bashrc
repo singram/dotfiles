@@ -11,6 +11,8 @@ if [ ! -z "$PS1" ]; then
 
   # append to the history file, don't overwrite it
   shopt -s histappend
+  # Whenever displaying the prompt, write the previous line to disk:
+  PROMPT_COMMAND='history -a'
 
   # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
   HISTSIZE=10000
@@ -19,6 +21,9 @@ if [ ! -z "$PS1" ]; then
   # check the window size after each command and, if necessary,
   # update the values of LINES and COLUMNS.
   shopt -s checkwinsize
+
+  # Ignore small typos in directory names
+  shopt -s cdspell
 
   # make less more friendly for non-text input files, see lesspipe(1)
   [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -120,6 +125,6 @@ test -f ~/.bash_functions && . ~/.bash_functions || true
 # want rspec/ruby to work fully in emacs
 if [[ -s /home/singram/.rvm/scripts/rvm ]] ; then source /home/singram/.rvm/scripts/rvm ; fi
 
-[[ $- == *i* ]]   &&   . ~/bash/git-prompt.sh
+#[[ $- == *i* ]]   &&   . ~/bash/git-prompt.sh
 
 #[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion

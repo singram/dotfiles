@@ -28,3 +28,15 @@ alias s4_home='cd ~/projects/s4/trunk'
 alias s4_trunk_reset='cd ~/projects/s4/trunk && rake db:drop:s4 && rake db:create:s4 && rake db:migrate:total'
 alias s4_trunk_sage3_reset='cd ~/projects/s4/trunk && rake db:drop:sage3 && rake db:create:sage3 && rake db:migrate:sage3'
 alias memcache_start='memcached -vv'
+
+function gitg
+{
+  command gitg "$@" &
+}
+export -f gitg
+
+function meld
+{
+  command meld "$@" &
+}
+export -f meld
