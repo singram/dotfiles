@@ -66,3 +66,5 @@
         whitespace = trailing-space,space-before-tab
         quotepath = false
 
+[diff]
+	external = ~/.bin/git-meld.sh
