@@ -111,7 +111,7 @@ export MYSQL_PS1="\u, \d> "
 export CATALINA_HOME=/usr/local/tomcat
 export JBOSS_HOME=/usr/local/jboss
 
-export RAILS_ENV=development_catalogable_cached
+export RAILS_ENV=development
 export URL=ipl.medsagetechnologies.srai:3000
 
 # Finally, update the path with all the good stuff
