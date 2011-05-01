@@ -67,4 +67,4 @@
         quotepath = false
 
 [diff]
-	external = ~/.bin/git-meld.sh
+#	external = ~/.bin/git-meld.sh

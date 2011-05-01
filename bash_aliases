@@ -10,7 +10,7 @@ alias l='ls -CF'
 alias lh='ls -laFh'
 alias rm_svn='find . -name ".svn" | xargs rm -Rf'
 
-alias update_projects='cd ~/projects/ && svn up sage2 sage3 s4 toolbox'
+alias update_projects='cd ~/projects/ && svn up sage2 toolbox'
 
 # tomcat operations
 # NOTE: Add: ack    ALL = NOPASSWD: ALL - to /etc/sudoers file to allow this to work without asking for pw.
