@@ -117,6 +117,8 @@ export URL=ipl.medsagetechnologies.srai:3000
 # Finally, update the path with all the good stuff
 export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$RUBY_HOME/bin:~/bin:$PATH:$CATALINA_HOME/bin:$JBOSS_HOME/bin
 
+export PS1='\[\e]0;\u@\h: \W\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w`__git_ps1`\$ '
+
 complete -C ~/.bash/rake_completion -o default rake
 
 test -f ~/.bash_functions && . ~/.bash_functions || true
