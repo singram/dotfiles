@@ -25,6 +25,8 @@
 (ruby-block-mode t)
 (setq ruby-block-highlight-toggle t)
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 (color-theme-charcoal-black)
 
 (setq ibuffer-saved-filter-groups
@@ -96,3 +98,21 @@
 	    		 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
 (global-set-key [f11] 'fullscreen)
 
+;;;;In TextMate, pasted lines are automatically indented, which is extremely time-saving. This should be fairly straightforward to implement in Emacs, but how?
+;;I've found the following code, which accomplishes this beautifully:
+(defadvice yank (after indent-region activate)
+  (if (member major-mode
+	      '(emacs-lisp-mode scheme-mode lisp-mode ruby-mode
+				c-mode c++-mode objc-mode
+				latex-mode plain-tex-mode))
+      (let ((mark-even-if-inactive t))
+	(indent-region (region-beginning) (region-end) nil))))
+;;Just put the above in your .emacs file and enjoy automatic indentation of yanked text in the listed programming modes. (To add your own modes, check the value of the major-mode variable (C-h v or M-x describe-variable) and add it to the list.)
+;;Note that for consistency, you should define the same advice for the yank-pop command:
+(defadvice yank-pop (after indent-region activate)
+  (if (member major-mode
+	      '(emacs-lisp-mode scheme-mode lisp-mode ruby-mode
+				c-mode c++-mode objc-mode
+				latex-mode plain-tex-mode))
+      (let ((mark-even-if-inactive t))
+	(indent-region (region-beginning) (region-end) nil))))
