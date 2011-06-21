@@ -129,4 +129,4 @@ if [[ -s /home/singram/.rvm/scripts/rvm ]] ; then source /home/singram/.rvm/scri
 
 #[[ $- == *i* ]]   &&   . ~/bash/git-prompt.sh
 
-#[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
