@@ -5,7 +5,7 @@
 
 (custom-set-variables
  '(cua-mode t nil (cua-base))
- '(column-number-mode t)) 
+ '(column-number-mode t))
 
 (setq initial-scratch-message nil)
 (setq default-directory "~/projects/")
@@ -42,7 +42,7 @@
                ("s4"             (filename . "projects/git/s4/"))
                ("sage_dbserver"  (filename . "projects/git/sage_dbserver/"))
                ("dotfiles"       (filename . "dotfiles/"))
-               ("general_development" 
+               ("general_development"
                 (or
                  (mode . ruby-mode)
                  (mode . c-mode)
@@ -116,3 +116,5 @@
 				latex-mode plain-tex-mode))
       (let ((mark-even-if-inactive t))
 	(indent-region (region-beginning) (region-end) nil))))
+
+(global-linum-mode 1)
