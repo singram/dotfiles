@@ -118,3 +118,12 @@
 	(indent-region (region-beginning) (region-end) nil))))
 
 (global-linum-mode 1)
+
+;; Disable some starter-kit defaults
+(remove-hook 'coding-hook 'turn-on-hl-line-mode)
+(setq truncate-lines nil)
+
+;; allow selection deletion
+(delete-selection-mode t)
+;; make sure delete key is delete key
+(global-set-key [delete] 'delete-char)
