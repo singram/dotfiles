@@ -119,6 +119,11 @@ export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$RUBY_HOME/bin:~/bin:$PATH:$CATALINA_
 
 export PS1='\[\e]0;\u@\h: \W\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w`__git_ps1`\$ '
 
+export TORQUEBOX_HOME=$HOME/projects/torquebox-current
+export JBOSS_HOME=$TORQUEBOX_HOME/jboss
+export JRUBY_HOME=$TORQUEBOX_HOME/jruby
+export PATH=$JRUBY_HOME/bin:$PATH
+
 complete -C ~/.bash/rake_completion -o default rake
 
 test -f ~/.bash_functions && . ~/.bash_functions || true

@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (color-theme-blackboard) "blackboard" "elpa-to-submit/blackboard.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/blackboard.el
 
 (autoload 'color-theme-blackboard "blackboard" "\
@@ -15,7 +15,7 @@ Color theme by JD Huntington, based off the TextMate Blackboard theme, created 2
 ;;;***
 
 ;;;### (autoloads (color-theme-charcoal-black) "charcoal" "elpa-to-submit/charcoal.el"
-;;;;;;  (19910 41298))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/charcoal.el
 
 (autoload 'color-theme-charcoal-black "charcoal" "\
@@ -25,8 +25,8 @@ Color theme by Lars Chr. Hausmann, created 2003-03-24.
 
 ;;;***
 
-;;;### (autoloads (cheat) "cheat" "elpa-to-submit/cheat.el" (19908
-;;;;;;  24343))
+;;;### (autoloads (cheat) "cheat" "elpa-to-submit/cheat.el" (19911
+;;;;;;  16578))
 ;;; Generated autoloads from elpa-to-submit/cheat.el
 
 (autoload 'cheat "cheat" "\
@@ -40,7 +40,7 @@ as a string instead.
 ;;;***
 
 ;;;### (autoloads (cperl-perldoc-at-point cperl-perldoc cperl-mode)
-;;;;;;  "cperl-mode" "elpa-to-submit/cperl-mode.el" (19908 24343))
+;;;;;;  "cperl-mode" "elpa-to-submit/cperl-mode.el" (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/cperl-mode.el
 
 (fset 'perl-mode 'cperl-mode)
@@ -237,7 +237,7 @@ Run a `perldoc' on the word around point.
 ;;;***
 
 ;;;### (autoloads (erc-highlight-nicknames) "erc-highlight-nicknames"
-;;;;;;  "elpa-to-submit/erc-highlight-nicknames.el" (19908 24343))
+;;;;;;  "elpa-to-submit/erc-highlight-nicknames.el" (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/erc-highlight-nicknames.el
 
 (autoload 'erc-highlight-nicknames "erc-highlight-nicknames" "\
@@ -250,7 +250,7 @@ color (#rrrrggggbbbb).
 ;;;***
 
 ;;;### (autoloads (espresso-mode) "espresso" "elpa-to-submit/espresso.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19960 64435))
 ;;; Generated autoloads from elpa-to-submit/espresso.el
 
 (autoload 'espresso-mode "espresso" "\
@@ -266,7 +266,7 @@ Key bindings:
 
 ;;;### (autoloads (htmlize-many-files-dired htmlize-many-files htmlize-file
 ;;;;;;  htmlize-region htmlize-buffer) "htmlize" "elpa-to-submit/htmlize.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19960 64441))
 ;;; Generated autoloads from elpa-to-submit/htmlize.el
 
 (autoload 'htmlize-buffer "htmlize" "\
@@ -332,7 +332,7 @@ HTMLize dired-marked files.
 ;;;***
 
 ;;;### (autoloads (javadoc-lookup) "javadoc-help" "elpa-to-submit/javadoc-help.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/javadoc-help.el
 
 (autoload 'javadoc-lookup "javadoc-help" "\
@@ -343,7 +343,7 @@ Look up Java class in Javadoc.
 ;;;***
 
 ;;;### (autoloads (markdown-mode) "markdown-mode" "elpa-to-submit/markdown-mode.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19960 64456))
 ;;; Generated autoloads from elpa-to-submit/markdown-mode.el
 
 (autoload 'markdown-mode "markdown-mode" "\
@@ -358,7 +358,7 @@ Major mode for editing Markdown files.
 ;;;***
 
 ;;;### (autoloads (moz-minor-mode) "moz" "elpa-to-submit/moz.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/moz.el
 
 (autoload 'moz-minor-mode "moz" "\
@@ -381,7 +381,7 @@ started as needed).
 ;;;### (autoloads (oddmuse-kill-url oddmuse-browse-this-page oddmuse-browse-page
 ;;;;;;  emacswiki-post oddmuse-insert-pagename oddmuse-revert oddmuse-post
 ;;;;;;  oddmuse-follow oddmuse-edit oddmuse-toggle-minor) "oddmuse"
-;;;;;;  "elpa-to-submit/oddmuse.el" (19908 24343))
+;;;;;;  "elpa-to-submit/oddmuse.el" (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/oddmuse.el
 
 (autoload 'oddmuse-toggle-minor "oddmuse" "\
@@ -447,9 +447,9 @@ Make the URL of current oddmuse page the latest kill in the kill ring.
 
 ;;;***
 
-;;;### (autoloads (paredit-mode) "paredit" "elpa-to-submit/paredit.el"
-;;;;;;  (19908 24343))
-;;; Generated autoloads from elpa-to-submit/paredit.el
+;;;### (autoloads (paredit-mode) "paredit" "../../.emacs.d/elpa-to-submit/paredit.el"
+;;;;;;  (19960 64464))
+;;; Generated autoloads from ../../.emacs.d/elpa-to-submit/paredit.el
 
 (autoload 'paredit-mode "paredit" "\
 Minor mode for pseudo-structurally editing Lisp code.
@@ -465,7 +465,7 @@ Paredit behaves badly if parentheses are imbalanced, so exercise
 ;;;***
 
 ;;;### (autoloads (pcomplete/rake) "pcmpl-rake" "elpa-to-submit/pcmpl-rake.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/pcmpl-rake.el
 
 (autoload 'pcomplete/rake "pcmpl-rake" "\
@@ -476,7 +476,7 @@ Completion rules for the `ssh' command.
 ;;;***
 
 ;;;### (autoloads (perl-find-file perldoc) "perl-find-library" "elpa-to-submit/perl-find-library.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/perl-find-library.el
 
 (autoload 'perldoc "perl-find-library" "\
@@ -493,7 +493,7 @@ Find a perl library by module name
 ;;;***
 
 ;;;### (autoloads (pod-mode) "pod-mode" "elpa-to-submit/pod-mode.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/pod-mode.el
 
 (autoload 'pod-mode "pod-mode" "\
@@ -503,7 +503,7 @@ Major mode for editing POD files (Plain Old Documentation for Perl).
 
 ;;;***
 
-;;;### (autoloads (ri) "ri" "elpa-to-submit/ri.el" (19908 24343))
+;;;### (autoloads (ri) "ri" "elpa-to-submit/ri.el" (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/ri.el
 
 (autoload 'ri "ri" "\
@@ -514,7 +514,7 @@ Look up Ruby documentation.
 ;;;***
 
 ;;;### (autoloads (ruby-electric-mode) "ruby-electric" "elpa-to-submit/ruby-electric.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/ruby-electric.el
 
 (autoload 'ruby-electric-mode "ruby-electric" "\
@@ -535,7 +535,7 @@ strings. Note that you must have Font Lock enabled.
 ;;;***
 
 ;;;### (autoloads (scpaste-region scpaste) "scpaste" "elpa-to-submit/scpaste.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/scpaste.el
 
 (autoload 'scpaste "scpaste" "\
@@ -551,7 +551,7 @@ Paste the current region via `scpaste'.
 ;;;***
 
 ;;;### (autoloads (textile-mode) "textile-mode" "elpa-to-submit/textile-mode.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/textile-mode.el
 
 (autoload 'textile-mode "textile-mode" "\
@@ -564,7 +564,7 @@ A major mode for editing textile files.
 ;;;***
 
 ;;;### (autoloads (tt-mode) "tt-mode" "elpa-to-submit/tt-mode.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/tt-mode.el
 
 (autoload 'tt-mode "tt-mode" "\
@@ -575,7 +575,7 @@ Major mode for editing Template Toolkit files
 ;;;***
 
 ;;;### (autoloads (color-theme-twilight) "twilight" "elpa-to-submit/twilight.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/twilight.el
 
 (autoload 'color-theme-twilight "twilight" "\
@@ -586,7 +586,7 @@ Color theme by Marcus Crafter, based off the TextMate Twilight theme, created 20
 ;;;***
 
 ;;;### (autoloads (color-theme-zenburn) "zenburn" "elpa-to-submit/zenburn.el"
-;;;;;;  (19908 24343))
+;;;;;;  (19911 16578))
 ;;; Generated autoloads from elpa-to-submit/zenburn.el
 
 (autoload 'color-theme-zenburn "zenburn" "\
@@ -598,8 +598,30 @@ Just some alien fruit salad to keep you in the zone.
 
 ;;;***
 
-;;;### (autoloads nil nil ("elpa-to-submit/color-theme.el" "elpa-to-submit/eshell-vc.el"
-;;;;;;  "elpa-to-submit/notify.el") (19911 15847 771713))
+;;;### (autoloads nil nil ("../../.emacs.d/elpa-to-submit/blackboard.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/charcoal.el" "../../.emacs.d/elpa-to-submit/cheat.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/color-theme.el" "../../.emacs.d/elpa-to-submit/cperl-mode.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/erc-highlight-nicknames.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/eshell-vc.el" "../../.emacs.d/elpa-to-submit/espresso.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/htmlize.el" "../../.emacs.d/elpa-to-submit/javadoc-help.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/markdown-mode.el" "../../.emacs.d/elpa-to-submit/moz.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/notify.el" "../../.emacs.d/elpa-to-submit/oddmuse.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/paredit.el" "../../.emacs.d/elpa-to-submit/pcmpl-rake.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/perl-find-library.el" "../../.emacs.d/elpa-to-submit/pod-mode.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/ri.el" "../../.emacs.d/elpa-to-submit/ruby-electric.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/scpaste.el" "../../.emacs.d/elpa-to-submit/textile-mode.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/tt-mode.el" "../../.emacs.d/elpa-to-submit/twilight.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/zenburn.el" "elpa-to-submit/blackboard.el"
+;;;;;;  "elpa-to-submit/charcoal.el" "elpa-to-submit/cheat.el" "elpa-to-submit/cperl-mode.el"
+;;;;;;  "elpa-to-submit/erc-highlight-nicknames.el" "elpa-to-submit/espresso.el"
+;;;;;;  "elpa-to-submit/htmlize.el" "elpa-to-submit/javadoc-help.el"
+;;;;;;  "elpa-to-submit/markdown-mode.el" "elpa-to-submit/moz.el"
+;;;;;;  "elpa-to-submit/oddmuse.el" "elpa-to-submit/pcmpl-rake.el"
+;;;;;;  "elpa-to-submit/perl-find-library.el" "elpa-to-submit/pod-mode.el"
+;;;;;;  "elpa-to-submit/ri.el" "elpa-to-submit/ruby-electric.el"
+;;;;;;  "elpa-to-submit/scpaste.el" "elpa-to-submit/textile-mode.el"
+;;;;;;  "elpa-to-submit/tt-mode.el" "elpa-to-submit/twilight.el"
+;;;;;;  "elpa-to-submit/zenburn.el") (19961 129 80641))
 
 ;;;***
 

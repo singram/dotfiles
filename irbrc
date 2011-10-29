@@ -73,6 +73,22 @@ begin
   alias q exit
   alias quit exit
 
+  def show_log
+    app.get('/') if defined?(app)
+    set_logger_to Logger.new(STDOUT)
+  end
+
+  def hide_log
+    set_logger_to RAILS_DEFAULT_LOGGER
+  end
+
+  def set_logger_to(logger)
+    logger.flush if logger.respond_to?(:flush)
+    ActiveRecord::Base.logger = logger
+    ActionController::Base.logger = logger
+    ActiveRecord::Base.clear_active_connections!
+  end
+
   puts '.irbrc loaded'
 rescue Exception => e
   puts e.message

@@ -1,5 +1,6 @@
 [user]
 	name = Stuart Ingram
+        email = singram@medsagetechnologies.com
 
 [alias]
         a = add
@@ -68,3 +69,9 @@
 
 [diff]
 #	external = ~/.bin/git-meld.sh
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 0x0+0+0
+	main-window-view = FileView
+	history-view-vpane-position = 588
+	file-view-vpane-position = 600
