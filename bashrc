@@ -109,20 +109,21 @@ export MAVEN_OPTS="-Xms256m -Xmx512m -XX:PermSize=256m -XX:MaxPermSize=512m"
 export ANT_OPTS="-Xms256m -Xmx512m -XX:PermSize=256m -XX:MaxPermSize=512m"
 export MYSQL_PS1="\u, \d> "
 export CATALINA_HOME=/usr/local/tomcat
-export JBOSS_HOME=/usr/local/jboss
+#export JBOSS_HOME=/usr/local/jboss
 
 export RAILS_ENV=development
 export URL=ipl.medsagetechnologies.srai:3000
 
 # Finally, update the path with all the good stuff
-export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$RUBY_HOME/bin:~/bin:$PATH:$CATALINA_HOME/bin:$JBOSS_HOME/bin
+#export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$RUBY_HOME/bin:~/bin:$PATH:$CATALINA_HOME/bin:$JBOSS_HOME/bin
+export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$RUBY_HOME/bin:~/bin:$PATH:$CATALINA_HOME/bin
 
 export PS1='\[\e]0;\u@\h: \W\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w`__git_ps1`\$ '
 
-export TORQUEBOX_HOME=$HOME/projects/torquebox-current
-export JBOSS_HOME=$TORQUEBOX_HOME/jboss
-export JRUBY_HOME=$TORQUEBOX_HOME/jruby
-export PATH=$JRUBY_HOME/bin:$PATH
+# export TORQUEBOX_HOME=$HOME/projects/torquebox-current
+# export JBOSS_HOME=$TORQUEBOX_HOME/jboss
+# export JRUBY_HOME=$TORQUEBOX_HOME/jruby
+# export PATH=$JRUBY_HOME/bin:$PATH
 
 complete -C ~/.bash/rake_completion -o default rake
 
@@ -135,3 +136,9 @@ if [[ -s /home/singram/.rvm/scripts/rvm ]] ; then source /home/singram/.rvm/scri
 #[[ $- == *i* ]]   &&   . ~/bash/git-prompt.sh
 
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+mkdir -p ~/sandboxes
+mkdir -p ~/opt/mysql
+
