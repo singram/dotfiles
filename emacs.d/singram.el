@@ -39,7 +39,10 @@
                ("sage2_trunk"    (filename . "projects/sage2/trunk/"))
                ("sage3_branches" (filename . "projects/sage3/branches/"))
                ("sage3"          (filename . "projects/git/sage3/"))
-               ("s4"             (filename . "projects/git/s4/"))
+               ("s4"             ( or (filename . "projects/git/s4/")
+                                      (filename . "projects/git/s4_working")))
+               ("discovery"      (filename . "projects/git/discovery/"))
+               ("discovery22"    (filename . "projects/git/discovery22/"))
                ("sage_dbserver"  (filename . "projects/git/sage_dbserver/"))
                ("dotfiles"       (filename . "dotfiles/"))
                ("general_development"
@@ -127,3 +130,17 @@
 (delete-selection-mode t)
 ;; make sure delete key is delete key
 (global-set-key [delete] 'delete-char)
+
+(add-to-list 'load-path "~/.emacs.d/elpa-to-submit/feature-mode")
+;; optional configurations
+;; default language if .feature doesn't have "# language: fi"
+;(setq feature-default-language "fi")
+;; point to cucumber languages.yml or gherkin i18n.yml to use
+;; exactly the same localization your cucumber uses
+;(setq feature-default-i18n-file "/path/to/gherkin/gem/i18n.yml")
+;; and load feature-mode
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
+(global-set-key (kbd "C-c c") 'mode-compile)
+(global-set-key (kbd "C-c k") 'mode-compile-kill)

@@ -264,6 +264,17 @@ Key bindings:
 
 ;;;***
 
+;;;### (autoloads (feature-mode) "feature-mode" "../../.emacs.d/elpa-to-submit/feature-mode.el"
+;;;;;;  (20229 52083))
+;;; Generated autoloads from ../../.emacs.d/elpa-to-submit/feature-mode.el
+
+(autoload 'feature-mode "feature-mode" "\
+Major mode for editing plain text stories
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (htmlize-many-files-dired htmlize-many-files htmlize-file
 ;;;;;;  htmlize-region htmlize-buffer) "htmlize" "elpa-to-submit/htmlize.el"
 ;;;;;;  (19960 64441))
@@ -603,16 +614,17 @@ Just some alien fruit salad to keep you in the zone.
 ;;;;;;  "../../.emacs.d/elpa-to-submit/color-theme.el" "../../.emacs.d/elpa-to-submit/cperl-mode.el"
 ;;;;;;  "../../.emacs.d/elpa-to-submit/erc-highlight-nicknames.el"
 ;;;;;;  "../../.emacs.d/elpa-to-submit/eshell-vc.el" "../../.emacs.d/elpa-to-submit/espresso.el"
-;;;;;;  "../../.emacs.d/elpa-to-submit/htmlize.el" "../../.emacs.d/elpa-to-submit/javadoc-help.el"
-;;;;;;  "../../.emacs.d/elpa-to-submit/markdown-mode.el" "../../.emacs.d/elpa-to-submit/moz.el"
-;;;;;;  "../../.emacs.d/elpa-to-submit/notify.el" "../../.emacs.d/elpa-to-submit/oddmuse.el"
-;;;;;;  "../../.emacs.d/elpa-to-submit/paredit.el" "../../.emacs.d/elpa-to-submit/pcmpl-rake.el"
-;;;;;;  "../../.emacs.d/elpa-to-submit/perl-find-library.el" "../../.emacs.d/elpa-to-submit/pod-mode.el"
-;;;;;;  "../../.emacs.d/elpa-to-submit/ri.el" "../../.emacs.d/elpa-to-submit/ruby-electric.el"
-;;;;;;  "../../.emacs.d/elpa-to-submit/scpaste.el" "../../.emacs.d/elpa-to-submit/textile-mode.el"
-;;;;;;  "../../.emacs.d/elpa-to-submit/tt-mode.el" "../../.emacs.d/elpa-to-submit/twilight.el"
-;;;;;;  "../../.emacs.d/elpa-to-submit/zenburn.el" "elpa-to-submit/blackboard.el"
-;;;;;;  "elpa-to-submit/charcoal.el" "elpa-to-submit/cheat.el" "elpa-to-submit/cperl-mode.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/feature-mode.el" "../../.emacs.d/elpa-to-submit/htmlize.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/javadoc-help.el" "../../.emacs.d/elpa-to-submit/markdown-mode.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/moz.el" "../../.emacs.d/elpa-to-submit/notify.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/oddmuse.el" "../../.emacs.d/elpa-to-submit/paredit.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/pcmpl-rake.el" "../../.emacs.d/elpa-to-submit/perl-find-library.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/pod-mode.el" "../../.emacs.d/elpa-to-submit/ri.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/ruby-electric.el" "../../.emacs.d/elpa-to-submit/scpaste.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/textile-mode.el" "../../.emacs.d/elpa-to-submit/tt-mode.el"
+;;;;;;  "../../.emacs.d/elpa-to-submit/twilight.el" "../../.emacs.d/elpa-to-submit/zenburn.el"
+;;;;;;  "elpa-to-submit/blackboard.el" "elpa-to-submit/charcoal.el"
+;;;;;;  "elpa-to-submit/cheat.el" "elpa-to-submit/cperl-mode.el"
 ;;;;;;  "elpa-to-submit/erc-highlight-nicknames.el" "elpa-to-submit/espresso.el"
 ;;;;;;  "elpa-to-submit/htmlize.el" "elpa-to-submit/javadoc-help.el"
 ;;;;;;  "elpa-to-submit/markdown-mode.el" "elpa-to-submit/moz.el"
@@ -621,7 +633,7 @@ Just some alien fruit salad to keep you in the zone.
 ;;;;;;  "elpa-to-submit/ri.el" "elpa-to-submit/ruby-electric.el"
 ;;;;;;  "elpa-to-submit/scpaste.el" "elpa-to-submit/textile-mode.el"
 ;;;;;;  "elpa-to-submit/tt-mode.el" "elpa-to-submit/twilight.el"
-;;;;;;  "elpa-to-submit/zenburn.el") (19961 129 80641))
+;;;;;;  "elpa-to-submit/zenburn.el") (20229 52089 314506))
 
 ;;;***
 
