@@ -9,8 +9,8 @@
 	ci = commit
 	co = checkout
 	dump = cat-file -p
-        d = diff
-        ds = diff --staged
+        d = diff           # show unstaged changes
+        ds = diff --staged # show staged changes
         h = help
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
         irb = rebase --interactive
@@ -26,14 +26,24 @@
         s = status
         sl = shortlog
         st = stash
-#	st = status
+        sta = stash apply
         stc = stash clear
+        std = stash drop
         stl = stash list
         stp = stash pop
 	type = cat-file -t
+        uncommit = reset --soft HEAD^ # go back before last commit, with files in uncommitted state
         undo = reset --soft HEAD^
+        unstage = reset HEAD # remove files from index (tracking)
         wd = diff --color-words
         wds = diff --color-words --staged
+
+        last = diff HEAD^ # show last committed change
+        filelog = log -u # show changes to a file
+        amend = commit --amend
+        ammend = commit --amend
+        mt = mergetool #fire up the merge tool
+        addall = !sh -c 'git add . && git add -u'
 
 [color]
 	status = auto
@@ -55,11 +65,11 @@
 [color "branch"]
         current = yellow reverse
         local = yellow
-        remote = green
+        remote = green bold
 
 [color "status"]
         added = yellow
-        changed = green
+        changed = green bold
         untracked = cyan
 
 [core]
