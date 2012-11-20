@@ -1,6 +1,6 @@
 [user]
 	name = Stuart Ingram
-        email = singram@medsagetechnologies.com
+        email = ingrams2@upmc.com
 
 [alias]
         a = add
@@ -9,8 +9,8 @@
 	ci = commit
 	co = checkout
 	dump = cat-file -p
-        d = diff           # show unstaged changes
-        ds = diff --staged # show staged changes
+        d = diff                                   # show unstaged changes
+        ds = diff --staged                         # show staged changes
         h = help
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
         irb = rebase --interactive
@@ -32,17 +32,18 @@
         stl = stash list
         stp = stash pop
 	type = cat-file -t
-        uncommit = reset --soft HEAD^ # go back before last commit, with files in uncommitted state
+        uncommit = reset --soft HEAD^              # go back before last commit, with files in uncommitted state
         undo = reset --soft HEAD^
-        unstage = reset HEAD # remove files from index (tracking)
+        unstage = reset HEAD                       # remove files from index (tracking)
         wd = diff --color-words
         wds = diff --color-words --staged
 
-        last = diff HEAD^ # show last committed change
-        filelog = log -u # show changes to a file
+        last = diff HEAD^                          # show last committed change
+        filelog = log -u                           # show changes to a file
         amend = commit --amend
         ammend = commit --amend
-        mt = mergetool #fire up the merge tool
+        mt = mergetool                             #fire up the merge tool
+        dt = difftool                              #fire up the diff tool
         addall = !sh -c 'git add . && git add -u'
 
 [color]
@@ -79,9 +80,13 @@
 
 [diff]
 #	external = ~/.bin/git-meld.sh
+        tool = meld
 [giggle]
 	main-window-maximized = true
 	main-window-geometry = 0x0+0+0
 	main-window-view = FileView
 	history-view-vpane-position = 588
 	file-view-vpane-position = 600
+[merge]
+	tool = meld
+        keepBackup = false
