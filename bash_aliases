@@ -9,7 +9,7 @@ alias l='ls -CF'
 # F puts / after directories * after executables @ after syms - h makes human readable sizes
 alias lh='ls -laFh'
 alias rm_svn='find . -name ".svn" | xargs rm -Rf'
-
+alias git_branches_sorted='for k in `git branch -a |sed s/^..//`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k"`\\t"$k";done|sort'
 alias update_projects='cd ~/projects/ && svn up sage2 toolbox'
 
 # tomcat operations

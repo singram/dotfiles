@@ -1,3 +1,4 @@
+# http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
 [user]
 	name = Stuart Ingram
         email = ingrams2@upmc.com
@@ -15,8 +16,11 @@
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
         irb = rebase --interactive
         l = log --oneline --decorate
+        ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
         ls-ignored = ls-files --exclude-standard --ignored --others
+        lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+        ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
         m = merge
         rb = rebase
         rba = rebase --abort
@@ -45,6 +49,14 @@
         mt = mergetool                             #fire up the merge tool
         dt = difftool                              #fire up the diff tool
         addall = !sh -c 'git add . && git add -u'
+        # Lives as a alias in .bashrc due to issues with unterminated character strings
+        # for k in `git branch -a |sed s/^..//`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k"`\\t"$k";done|sort
+        r = reset
+        r1 = reset HEAD^
+        r2 = reset HEAD^^
+        rh = reset --hard
+        rh1 = reset HEAD^ --hard
+        rh2 = reset HEAD^^ --hard
 
 [color]
 	status = auto
