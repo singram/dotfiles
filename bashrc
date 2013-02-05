@@ -111,12 +111,12 @@ export MYSQL_PS1="\u, \d> "
 export CATALINA_HOME=/usr/local/tomcat
 #export JBOSS_HOME=/usr/local/jboss
 
-export RAILS_ENV=development
-export URL=ipl.medsagetechnologies.srai:3000
+# export RAILS_ENV=development
+# export URL=ipl.medsagetechnologies.srai:3000
 
 # Finally, update the path with all the good stuff
 #export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$RUBY_HOME/bin:~/bin:$PATH:$CATALINA_HOME/bin:$JBOSS_HOME/bin
-export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$RUBY_HOME/bin:~/bin:$PATH:$CATALINA_HOME/bin
+#export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$RUBY_HOME/bin:~/bin:$PATH:$CATALINA_HOME/bin
 
 export PS1='\[\e]0;\u@\h: \W\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w`__git_ps1`\$ '
 
@@ -138,7 +138,4 @@ if [[ -s /home/singram/.rvm/scripts/rvm ]] ; then source /home/singram/.rvm/scri
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-mkdir -p ~/sandboxes
-mkdir -p ~/opt/mysql
-
+[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"

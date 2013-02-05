@@ -36,10 +36,12 @@
                            (mode . mail-mode)))
                ("toolbox"                (filename . "projects/toolbox/dev/"))
                ("cdris"                  (filename . "projects/cdris_repo/"))
+               ("cdris_debug"            (filename . "projects/cdris_debug/"))
                ("cdris_test_ui"          (filename . "projects/cdris_test_ui/"))
                ("cdris_embedded_ui"      (filename . "projects/cdris_embedded_ui/"))
                ("cdris_patient_identity" (filename . "projects/cdris_patient_identity/"))
                ("cdris_mirth"            (filename . "projects/cdris_mirth/"))
+               ("sandbox"                (filename . "projects/sandbox/"))
                ("gitolite"               (filename . "projects/gitolite-admin/"))
                ("dotfiles"               (filename . "dotfiles/"))
                ("general_development"
