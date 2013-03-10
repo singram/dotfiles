@@ -17,17 +17,13 @@
 (setq desktop-save 'if-exists)
 (desktop-save-mode 1)
 
-(require 'autopair)
-(autopair-global-mode t)
-(setq autopair-autowrap t)
-
-(require 'ruby-block)
-(ruby-block-mode t)
-(setq ruby-block-highlight-toggle t)
+;; ELPA package does not seem to load correctly. Using one in
+;; subdir ;; (require 'ruby-block) ;; (ruby-block-mode t) ;; (setq
+;; ruby-block-highlight-toggle t)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(color-theme-charcoal-black)
+(load-theme 'deeper-blue t)
 
 (setq ibuffer-saved-filter-groups
       (quote (("default"
@@ -122,7 +118,7 @@
 (global-linum-mode 1)
 
 ;; Disable some starter-kit defaults
-(remove-hook 'coding-hook 'turn-on-hl-line-mode)
+(remove-hook 'prog-mode-hook 'esk-turn-on-hl-line-mode)
 (setq truncate-lines nil)
 
 ;; allow selection deletion
@@ -130,16 +126,17 @@
 ;; make sure delete key is delete key
 (global-set-key [delete] 'delete-char)
 
-(add-to-list 'load-path "~/.emacs.d/elpa-to-submit/feature-mode")
 ;; optional configurations
 ;; default language if .feature doesn't have "# language: fi"
-;(setq feature-default-language "fi")
+(setq feature-default-language "fi")
 ;; point to cucumber languages.yml or gherkin i18n.yml to use
 ;; exactly the same localization your cucumber uses
-;(setq feature-default-i18n-file "/path/to/gherkin/gem/i18n.yml")
+(setq feature-default-i18n-file "/path/to/gherkin/gem/i18n.yml")
 ;; and load feature-mode
-(require 'feature-mode)
+;(require 'feature-mode)
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
 (global-set-key (kbd "C-c c") 'mode-compile)
 (global-set-key (kbd "C-c k") 'mode-compile-kill)
+
+(add-hook 'ruby-mode-hook       'esk-paredit-nonlisp)
