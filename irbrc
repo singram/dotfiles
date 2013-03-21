@@ -1,8 +1,41 @@
+# ruby 1.8.7 compatible
+require 'rubygems'
+require 'irb/completion'
+
+# interactive editor: use vim from within irb
+begin
+  require 'interactive_editor'
+rescue LoadError => err
+  warn "Couldn't load interactive_editor: #{err}"
+end
+
+# awesome print
+begin
+  require 'awesome_print'
+  AwesomePrint.irb!
+rescue LoadError => err
+  warn "Couldn't load awesome_print: #{err}"
+end
+
+begin
+  require 'wirble'
+  Wirble.init
+  # Comment out line below to suppress console result coloring
+  Wirble.colorize unless Config::CONFIG['host_os'] == 'mswin32'
+rescue LoadError => err
+  warn "Couldn't load wirble: #{err}"
+  # Wirble gem not installed
+  # load rubygems & pp.  Normally done by wirble
+  require 'pp'
+end
+
 begin
 
+  IRB.conf[:PROMPT_MODE] = :SIMPLE
   ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
 
   IRB.conf[:SAVE_HISTORY] = 10000
+  IRB.conf[:EVAL_HISTORY] = 10000
   ENV['IRB_HISTORY_FILE'] = "#{ENV['HOME']}/.irb_history"
   # Uncomment line below to have seperate irb history from rails script/console
   #IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history_rails" if ENV['RAILS_ENV']
@@ -11,17 +44,6 @@ begin
   require 'rbconfig' rescue nil
   require 'win32/console/ansi' if Config::CONFIG['host_os'] == 'mswin32'
 
-  begin
-    require 'rubygems' rescue nil
-    require 'wirble'
-    Wirble.init
-    # Comment out line below to suppress console result coloring
-    Wirble.colorize unless Config::CONFIG['host_os'] == 'mswin32'
-  rescue
-    # Wirble gem not installed
-    # load rubygems & pp.  Normally done by wirble
-    require 'pp'
-  end
 
   # Clear
   def cls
@@ -45,11 +67,14 @@ begin
 
   class Object
     def local_methods
-      (methods - Object.instance_methods).sort
-    end
-
-    def local_methods2(obj = self)
-      (obj.methods - obj.class.superclass.instance_methods).sort
+      case self.class
+      when Class
+        self.public_methods.sort - Object.public_methods
+      when Module
+        self.public_methods.sort - Module.public_methods
+      else
+        self.public_methods.sort - Object.new.public_methods
+      end
     end
   end
 
