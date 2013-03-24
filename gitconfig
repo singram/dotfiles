@@ -6,6 +6,7 @@
 [alias]
         a = add
 	br = branch
+        brs = "!f() { for k in `git branch -a |sed s/^..//`;do echo `git log -1 --pretty=format:\"%Cgreen%ci %Cblue%cr%Creset\" \"$k\"` \\\t \"$k\";done | sort; }; f"
         changes = diff --name-status -r
         churn = "!f() { git log --all -M -C --name-only --format='format:' \"$@\" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print \"count\tfile\"} {print $1 \"\t\" $2}' | sort -g; }; f"
    	ci = commit
