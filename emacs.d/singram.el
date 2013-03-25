@@ -17,6 +17,7 @@
 (setq desktop-save 'if-exists)
 (desktop-save-mode 1)
 
+
 ;; ELPA package does not seem to load correctly. Using one in
 ;; subdir ;; (require 'ruby-block) ;; (ruby-block-mode t) ;; (setq
 ;; ruby-block-highlight-toggle t)
@@ -133,10 +134,16 @@
 ;; exactly the same localization your cucumber uses
 (setq feature-default-i18n-file "/path/to/gherkin/gem/i18n.yml")
 ;; and load feature-mode
-;(require 'feature-mode)
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\.yml$" . yaml-mode))
 
 (global-set-key (kbd "C-c c") 'mode-compile)
 (global-set-key (kbd "C-c k") 'mode-compile-kill)
 
 (add-hook 'ruby-mode-hook       'esk-paredit-nonlisp)
+
+(require 'autopair)
+(autopair-global-mode 1)
+(setq autopair-autowrap t)
