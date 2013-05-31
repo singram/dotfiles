@@ -15,6 +15,8 @@ begin
   AwesomePrint.irb!
 rescue LoadError => err
   warn "Couldn't load awesome_print: #{err}"
+rescue Exception => err
+  warn "Couldn't load awesome_print: #{err}"
 end
 
 begin
@@ -42,7 +44,7 @@ begin
   IRB.conf[:AUTO_INDENT] = true
 
   require 'rbconfig' rescue nil
-  require 'win32/console/ansi' if Config::CONFIG['host_os'] == 'mswin32'
+  require 'win32/console/ansi' if RbConfig::CONFIG['host_os'] == 'mswin32'
 
 
   # Clear
