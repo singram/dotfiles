@@ -117,7 +117,7 @@ begin
   end
 
   puts '.irbrc loaded'
-rescue Exception => e
+rescue => e
   puts e.message
   puts e.backtrace
   puts 'ERROR loading .irbrc'
