@@ -41,8 +41,10 @@
                ("cdris_mirth"            (filename . "projects/cdris_mirth/"))
                ("cdris_puppet"           (filename . "projects/cdris_puppet/"))
                ("euler"                  (filename . "projects/euler/"))
+               ("d3"                     (filename . "projects/d3/"))
                ("hpppm"                  (filename . "projects/hpppm/"))
                ("hcc_portal"             (filename . "projects/hcc_portal/"))
+               ("presentations"          (filename . "projects/presentations/"))
                ("sandbox"                (filename . "projects/sandbox/"))
                ("gitolite"               (filename . "projects/gitolite-admin/"))
                ("dotfiles"               (filename . "dotfiles/"))
@@ -152,3 +154,6 @@
 (require 'autopair)
 (autopair-global-mode 1)
 (setq autopair-autowrap t)
+
+(require 'rvm)
+(rvm-use-default) ;; use rvm's default ruby for the current Emacs session
