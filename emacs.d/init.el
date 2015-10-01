@@ -6,7 +6,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(better-defaults paredit idle-highlight-mode ido-ubiquitous color-theme ruby-block feature-mode rspec-mode yaml-mode starter-kit-bindings starter-kit-ruby
+(defvar my-packages '(better-defaults paredit idle-highlight-mode ido-ubiquitous color-theme ruby-block feature-mode rspec-mode yaml-mode starter-kit-bindings starter-kit-ruby go-mode
                                       find-file-in-project magit smex scpaste))
 
 (dolist (p my-packages)

@@ -45,6 +45,7 @@
                ("general_development"
                 (or
                  (mode . ruby-mode)
+                 (mode . go-mode)
                  (mode . c-mode)
                  (mode . perl-mode)
                  (mode . python-mode)
@@ -102,7 +103,7 @@
 ;;I've found the following code, which accomplishes this beautifully:
 (defadvice yank (after indent-region activate)
   (if (member major-mode
-	      '(emacs-lisp-mode scheme-mode lisp-mode ruby-mode
+	      '(emacs-lisp-mode scheme-mode lisp-mode ruby-mode go-mode
 				c-mode c++-mode objc-mode
 				latex-mode plain-tex-mode))
       (let ((mark-even-if-inactive t))
@@ -111,7 +112,7 @@
 ;;Note that for consistency, you should define the same advice for the yank-pop command:
 (defadvice yank-pop (after indent-region activate)
   (if (member major-mode
-	      '(emacs-lisp-mode scheme-mode lisp-mode ruby-mode
+	      '(emacs-lisp-mode scheme-mode lisp-mode ruby-mode go-mode
 				c-mode c++-mode objc-mode
 				latex-mode plain-tex-mode))
       (let ((mark-even-if-inactive t))
