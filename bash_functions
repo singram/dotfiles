@@ -6,6 +6,23 @@ WEATHERARRAY=( `w3m -dump "http://www.google.com/search?hl=en&lr=&client=firefox
 echo ${WEATHERARRAY[@]}
 }
 
+docker_clean_containers ()
+{
+  docker rm `docker ps --no-trunc -aq`
+}
+
+docker_clean_images ()
+{
+  docker images -q --filter "dangling=true" | xargs docker rmi
+}
+
+docker_clean_all ()
+{
+  docker_clean_containers
+  docker_clean_images
+}
+
+
 # Stock prices - can be called two ways. # stock novl  (this shows stock pricing)  #stock "novell"  (this way shows stock symbol for novell)
 stock ()
 {
