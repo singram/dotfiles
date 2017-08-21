@@ -103,7 +103,7 @@ fi
 # memcached stuff
 export EVENT_NOKQUEUE=1
 
-export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export MAVEN_HOME=/usr/local/apache-maven/apache-maven-2.2.1
 export MAVEN_OPTS="-Xms256m -Xmx512m -XX:PermSize=256m -XX:MaxPermSize=512m"
 export ANT_OPTS="-Xms256m -Xmx512m -XX:PermSize=256m -XX:MaxPermSize=512m"

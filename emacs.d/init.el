@@ -6,9 +6,9 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(better-defaults paredit idle-highlight-mode ido-ubiquitous color-theme ruby-block feature-mode rspec-mode yaml-mode starter-kit-bindings starter-kit-ruby go-mode
-                                      find-file-in-project magit smex scpaste))
-
+(defvar my-packages '(better-defaults paredit idle-highlight-mode ido-ubiquitous color-theme ruby-block feature-mode rspec-mode yaml-mode starter-kit-bindings go-mode ;;starter-kit-ruby 
+                                      find-file-in-project smex scpaste))
+;; magit
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
@@ -19,7 +19,14 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
- '(safe-local-variable-values (quote ((Coding . utf-8) (whitespace-line-column . 80) (lexical-binding . t)))))
+ '(package-selected-packages
+   (quote
+    (scpaste smex find-file-in-project yaml-mode ruby-block rspec-mode paredit ido-ubiquitous idle-highlight-mode feature-mode color-theme better-defaults)))
+ '(safe-local-variable-values
+   (quote
+    ((Coding . utf-8)
+     (whitespace-line-column . 80)
+     (lexical-binding . t)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
