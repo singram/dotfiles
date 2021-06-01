@@ -22,6 +22,17 @@ docker_clean_all ()
   docker_clean_images
 }
 
+function gitg
+{
+  command gitg "$@" &
+}
+export -f gitg
+
+function meld
+{
+  command meld "$@" &
+}
+export -f meld
 
 # Stock prices - can be called two ways. # stock novl  (this shows stock pricing)  #stock "novell"  (this way shows stock symbol for novell)
 stock ()

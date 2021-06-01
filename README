@@ -3,5 +3,5 @@
   sudo apt-get install git
   git clone git://github.com/singram/dotfiles ~/dotfiles
   cd ~/dotfiles
-  rake install
+  ./install_bash.sh
 
