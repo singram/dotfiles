@@ -1,7 +1,14 @@
 #!/bin/bash
 
+# Update repos
+apt-get update
+
 # Useful packages
-apt-get install net-tools clusterssh curl dstat htop iftop nmap sshfs sysstat tmux
+apt-get install net-tools clusterssh curl dstat htop iftop nmap sshfs sysstat tmux jq 
+
+# Python
+apt-get install python3-pip pkg-config libicu-dev
+pip install pyicu csvkit
 
 # Build tools
 #apt-get install dconf-tools build-essential
